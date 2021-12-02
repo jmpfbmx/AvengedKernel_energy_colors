@@ -474,9 +474,9 @@ EXPORT_SYMBOL(mt_wifi_power_off);
 	  #if defined(CONFIG_MTK_WCN_CMB_SDIO_SLOT) && (CONFIG_MTK_WCN_CMB_SDIO_SLOT == 0)
     struct msdc_hw msdc0_hw = {	    
         .clk_src        = MSDC_CLKSRC_200MHZ,
-        .cmd_edge       = MSDC_SMPL_FALLING,
-        .rdata_edge     = MSDC_SMPL_FALLING,
-        .wdata_edge     = MSDC_SMPL_FALLING,
+        .cmd_edge       = MSDC_SMPL_RISING,
+        .rdata_edge     = MSDC_SMPL_RISING,
+        .wdata_edge     = MSDC_SMPL_RISING,
         .clk_drv        = 0,
         .cmd_drv        = 0,
         .dat_drv        = 0,
@@ -509,9 +509,9 @@ EXPORT_SYMBOL(mt_wifi_power_off);
         #else
         .clk_src        = MSDC_CLKSRC_200MHZ,
         #endif
-        .cmd_edge       = MSDC_SMPL_FALLING,
-        .rdata_edge 	  = MSDC_SMPL_FALLING,
-        .wdata_edge 	  = MSDC_SMPL_FALLING,
+        .cmd_edge       = MSDC_SMPL_RISING,
+        .rdata_edge 	  = MSDC_SMPL_RISING,
+        .wdata_edge 	  = MSDC_SMPL_RISING,
         .clk_drv        = 2, //6mA
         .cmd_drv        = 2, //6mA
         .dat_drv        = 2, //6mA
@@ -544,9 +544,9 @@ EXPORT_SYMBOL(mt_wifi_power_off);
         #else
         .clk_src        = MSDC_CLKSRC_200MHZ,
         #endif
-        .cmd_edge       = MSDC_SMPL_FALLING,
-        .rdata_edge 	  = MSDC_SMPL_FALLING,
-        .wdata_edge 	  = MSDC_SMPL_FALLING,
+        .cmd_edge       = MSDC_SMPL_RISING,
+        .rdata_edge 	  = MSDC_SMPL_RISING,
+        .wdata_edge 	  = MSDC_SMPL_RISING,
         .clk_drv        = MSDC0_ODC_4MA,
         .cmd_drv        = MSDC0_ODC_4MA,
         .dat_drv        = MSDC0_ODC_4MA,
@@ -575,9 +575,9 @@ EXPORT_SYMBOL(mt_wifi_power_off);
     #if defined(CONFIG_MTK_WCN_CMB_SDIO_SLOT) && (CONFIG_MTK_WCN_CMB_SDIO_SLOT == 1)
     struct msdc_hw msdc1_hw = {	    
         .clk_src        = MSDC_CLKSRC_200MHZ,
-        .cmd_edge       = MSDC_SMPL_FALLING,
-        .rdata_edge     = MSDC_SMPL_FALLING,
-        .wdata_edge     = MSDC_SMPL_FALLING,
+        .cmd_edge       = MSDC_SMPL_RISING,
+        .rdata_edge     = MSDC_SMPL_RISING,
+        .wdata_edge     = MSDC_SMPL_RISING,
         .clk_drv        = 0,
         .cmd_drv        = 0,
         .dat_drv        = 0,
@@ -606,9 +606,9 @@ EXPORT_SYMBOL(mt_wifi_power_off);
     #else
     struct msdc_hw msdc1_hw = {
         .clk_src        = MSDC_CLKSRC_200MHZ,
-        .cmd_edge       = MSDC_SMPL_FALLING,
-        .rdata_edge     = MSDC_SMPL_FALLING,
-        .wdata_edge     = MSDC_SMPL_FALLING,
+        .cmd_edge       = MSDC_SMPL_RISING,
+        .rdata_edge     = MSDC_SMPL_RISING,
+        .wdata_edge     = MSDC_SMPL_RISING,
         .clk_drv        = 4, //20mA for SD20, 15mA for SDR50, DDR50
         .cmd_drv        = 4, //20mA for SD20, 15mA for SDR50, DDR50
         .dat_drv        = 4, //20mA for SD20, 15mA for SDR50, DDR50
