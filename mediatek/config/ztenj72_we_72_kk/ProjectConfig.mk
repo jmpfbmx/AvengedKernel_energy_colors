@@ -178,7 +178,7 @@ CUSTOM_KERNEL_SUB_LENS=dummy_lens
 
 # touch driver  need to report correct touch axes
 #CUSTOM_KERNEL_TOUCHPANEL=ft6206_wvga_v815w GT9XX_hotknot_M402A
-#CUSTOM_KERNEL_TOUCHPANEL=ft6206_wvga_v815w
+CUSTOM_KERNEL_TOUCHPANEL=ft5206
 
 # Configuration for USB PHY
 CUSTOM_KERNEL_USB=mt6577
